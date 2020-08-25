@@ -1,12 +1,24 @@
 ﻿using System;
+using System.Threading;
 
-namespace ConsoleApp2
+class Program
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
+	static void Main()
+	{
+		Console.WriteLine("Enter your name:");
+		string name = Console.ReadLine();
+		if (name != "")
+		{
+			Thread.Sleep(5000);
+			Console.WriteLine($"Hello, {name}!");
+			Thread.Sleep(5000);
+			Console.WriteLine($"Goodbye, {name}!");
+
+		}
+		else
+		{
+
+		}
+		Console.ReadKey();
+	}
 }
