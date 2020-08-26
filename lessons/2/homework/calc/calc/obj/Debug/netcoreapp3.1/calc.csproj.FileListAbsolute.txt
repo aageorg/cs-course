@@ -1,0 +1,13 @@
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\2\homework\calc\calc\obj\Debug\netcoreapp3.1\calc.csprojAssemblyReference.cache
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\2\homework\calc\calc\obj\Debug\netcoreapp3.1\calc.AssemblyInfoInputs.cache
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\2\homework\calc\calc\obj\Debug\netcoreapp3.1\calc.AssemblyInfo.cs
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\2\homework\calc\calc\obj\Debug\netcoreapp3.1\calc.csproj.CoreCompileInputs.cache
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\2\homework\calc\calc\bin\Debug\netcoreapp3.1\calc.exe
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\2\homework\calc\calc\bin\Debug\netcoreapp3.1\calc.deps.json
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\2\homework\calc\calc\bin\Debug\netcoreapp3.1\calc.runtimeconfig.json
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\2\homework\calc\calc\bin\Debug\netcoreapp3.1\calc.runtimeconfig.dev.json
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\2\homework\calc\calc\bin\Debug\netcoreapp3.1\calc.dll
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\2\homework\calc\calc\bin\Debug\netcoreapp3.1\calc.pdb
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\2\homework\calc\calc\obj\Debug\netcoreapp3.1\calc.dll
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\2\homework\calc\calc\obj\Debug\netcoreapp3.1\calc.pdb
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\2\homework\calc\calc\obj\Debug\netcoreapp3.1\calc.genruntimeconfig.cache
