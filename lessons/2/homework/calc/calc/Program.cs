@@ -84,7 +84,8 @@ namespace calc
             }
             else 
             {
-                Console.WriteLine("Thank you. Press any key to exit.");     
+                Console.WriteLine("Thank you. Press any key to exit.");
+                Console.ReadLine();
             }
 
 
