@@ -21,8 +21,8 @@ namespace calc
                 double doubleA = double.Parse(a);
                 double doubleB = double.Parse(b);
                 Console.WriteLine("Please select an operator (1-6):");
-                Console.WriteLine("1 (+)           3 (*)          5(%)");
-                Console.WriteLine("2 (-)           4 (/)          6(^)\n");
+                Console.WriteLine("1 (+)           3 (*)          5 (%)");
+                Console.WriteLine("2 (-)           4 (/)          6 (^)\n");
                 string act = Console.ReadLine();
                
                 if (Regex.IsMatch(act, "^[1-6]{1}$"))
@@ -76,6 +76,17 @@ namespace calc
                     Console.WriteLine(a+" ^ "+b+" = "+ result);
                     break;
             }
+            Console.WriteLine("Do you want to calculate something else? (y/n)");
+            string thenext = Console.ReadLine();
+            if (thenext == "y")
+            {
+                calc.Program.Main();
+            }
+            else 
+            {
+                Console.WriteLine("Thank you. Press any key to exit.");     
+            }
+
 
         }
 
