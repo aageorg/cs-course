@@ -1,0 +1,13 @@
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\colors\colors\obj\Debug\netcoreapp3.1\colors.csprojAssemblyReference.cache
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\colors\colors\obj\Debug\netcoreapp3.1\colors.AssemblyInfoInputs.cache
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\colors\colors\obj\Debug\netcoreapp3.1\colors.AssemblyInfo.cs
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\colors\colors\obj\Debug\netcoreapp3.1\colors.csproj.CoreCompileInputs.cache
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\colors\colors\bin\Debug\netcoreapp3.1\colors.exe
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\colors\colors\bin\Debug\netcoreapp3.1\colors.deps.json
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\colors\colors\bin\Debug\netcoreapp3.1\colors.runtimeconfig.json
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\colors\colors\bin\Debug\netcoreapp3.1\colors.runtimeconfig.dev.json
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\colors\colors\bin\Debug\netcoreapp3.1\colors.dll
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\colors\colors\bin\Debug\netcoreapp3.1\colors.pdb
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\colors\colors\obj\Debug\netcoreapp3.1\colors.dll
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\colors\colors\obj\Debug\netcoreapp3.1\colors.pdb
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\colors\colors\obj\Debug\netcoreapp3.1\colors.genruntimeconfig.cache

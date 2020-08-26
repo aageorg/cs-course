@@ -87,9 +87,6 @@ namespace calc
                 Console.WriteLine("Thank you. Press any key to exit.");
                 Console.ReadLine();
             }
-
-
         }
-
     }
 }
