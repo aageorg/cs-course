@@ -1,0 +1,12 @@
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.AssemblyInfoInputs.cache
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.AssemblyInfo.cs
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.csproj.CoreCompileInputs.cache
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\ConsoleApp4.exe
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\ConsoleApp4.deps.json
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\ConsoleApp4.runtimeconfig.json
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\ConsoleApp4.runtimeconfig.dev.json
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\ConsoleApp4.dll
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\ConsoleApp4.pdb
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.dll
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.pdb
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\4\classwork\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.genruntimeconfig.cache
