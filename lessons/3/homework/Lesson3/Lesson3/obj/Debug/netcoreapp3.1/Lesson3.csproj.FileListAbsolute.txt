@@ -1,0 +1,13 @@
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\homework\Lesson3\Lesson3\bin\Debug\netcoreapp3.1\Lesson3.exe
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\homework\Lesson3\Lesson3\bin\Debug\netcoreapp3.1\Lesson3.deps.json
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\homework\Lesson3\Lesson3\bin\Debug\netcoreapp3.1\Lesson3.runtimeconfig.json
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\homework\Lesson3\Lesson3\bin\Debug\netcoreapp3.1\Lesson3.runtimeconfig.dev.json
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\homework\Lesson3\Lesson3\bin\Debug\netcoreapp3.1\Lesson3.dll
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\homework\Lesson3\Lesson3\bin\Debug\netcoreapp3.1\Lesson3.pdb
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\homework\Lesson3\Lesson3\obj\Debug\netcoreapp3.1\Lesson3.csprojAssemblyReference.cache
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\homework\Lesson3\Lesson3\obj\Debug\netcoreapp3.1\Lesson3.AssemblyInfoInputs.cache
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\homework\Lesson3\Lesson3\obj\Debug\netcoreapp3.1\Lesson3.AssemblyInfo.cs
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\homework\Lesson3\Lesson3\obj\Debug\netcoreapp3.1\Lesson3.csproj.CoreCompileInputs.cache
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\homework\Lesson3\Lesson3\obj\Debug\netcoreapp3.1\Lesson3.dll
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\homework\Lesson3\Lesson3\obj\Debug\netcoreapp3.1\Lesson3.pdb
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\homework\Lesson3\Lesson3\obj\Debug\netcoreapp3.1\Lesson3.genruntimeconfig.cache

@@ -1,0 +1,13 @@
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\classwork\Objects\Objects\bin\Debug\netcoreapp3.1\Objects.exe
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\classwork\Objects\Objects\bin\Debug\netcoreapp3.1\Objects.deps.json
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\classwork\Objects\Objects\bin\Debug\netcoreapp3.1\Objects.runtimeconfig.json
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\classwork\Objects\Objects\bin\Debug\netcoreapp3.1\Objects.runtimeconfig.dev.json
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\classwork\Objects\Objects\bin\Debug\netcoreapp3.1\Objects.dll
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\classwork\Objects\Objects\bin\Debug\netcoreapp3.1\Objects.pdb
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\classwork\Objects\Objects\obj\Debug\netcoreapp3.1\Objects.csprojAssemblyReference.cache
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\classwork\Objects\Objects\obj\Debug\netcoreapp3.1\Objects.AssemblyInfoInputs.cache
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\classwork\Objects\Objects\obj\Debug\netcoreapp3.1\Objects.AssemblyInfo.cs
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\classwork\Objects\Objects\obj\Debug\netcoreapp3.1\Objects.csproj.CoreCompileInputs.cache
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\classwork\Objects\Objects\obj\Debug\netcoreapp3.1\Objects.dll
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\classwork\Objects\Objects\obj\Debug\netcoreapp3.1\Objects.pdb
+C:\Users\Nastasia\Documents\Repos\cs-course\lessons\3\classwork\Objects\Objects\obj\Debug\netcoreapp3.1\Objects.genruntimeconfig.cache
