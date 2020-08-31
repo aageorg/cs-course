@@ -25,13 +25,10 @@ namespace Lesson4
 
             for (int i = search; i>0; i--)
             {
-                Console.WriteLine("start iteration: "+i);
                 if(Enum.IsDefined(typeof(Containers), i) == true)
                 {
-                    Console.WriteLine("next step: " + i);
-                    Console.WriteLine(i +": "+ search/i + " " + (Containers)i + " container(s) (" + i + "L)");
+                    Console.WriteLine(search/i + " " + (Containers)i + " container(s) (" + i + "L)");
                     i = ((int)liters % i);
-                    Console.WriteLine(i);
                     search = i;
                     i++;                                       
                 }
