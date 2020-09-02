@@ -30,7 +30,7 @@ namespace Lesson4
                     Console.WriteLine(search/i + " " + (Containers)i + " container(s) (" + i + "L)");
                     i = ((int)liters % i);
                     search = i;
-                    i++;                                       
+                    i++;
                 }
             }
         }
