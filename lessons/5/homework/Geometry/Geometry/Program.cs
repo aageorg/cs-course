@@ -13,7 +13,7 @@ namespace Geometry
 {
     class Program
     {
-        static dynamic DoubleValid(string a)
+        static double DoubleValid(string a)
         {
             double result;
             while (!double.TryParse(a.Replace(".", ","), out result))
@@ -40,8 +40,8 @@ namespace Geometry
                 wrongCount++;
             }
             while (!int.TryParse(figure, out figureNum) || !Enum.IsDefined(typeof(Figures), figureNum));
-            dynamic s;
-            dynamic p;
+            double s;
+            double p;
             dynamic input;
             switch (figureNum)
             {
