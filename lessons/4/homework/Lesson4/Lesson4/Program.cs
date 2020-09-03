@@ -27,16 +27,16 @@ namespace Lesson4
             return max;
         }
 
-        static dynamic ValidateInput(string input)
+        static bool ValidateInput(string input)
         {
             if (!decimal.TryParse(input.Replace(".", ","), out decimal i))
             {
-                Console.WriteLine("Недопустимое значение. Введите число.");
+                Console.WriteLine("Недопустимое значение.\nВведите число.");
                 return false;
             }
             if (i > Int32.MaxValue || i < 1)
             {
-                Console.WriteLine("Допустимый диапазон значений от 1 до "+ Int32.MaxValue + ". Введите число.");
+                Console.WriteLine("Допустимый диапазон значений от 1 до "+ Int32.MaxValue + ".\nВведите число.");
                 return false;
             }
             return true;
