@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq.Expressions;
+using System.Reflection.Metadata.Ecma335;
 
 namespace iBanking
 {
@@ -11,20 +13,20 @@ namespace iBanking
                 Console.WriteLine("Нечисловое значение. Введите число.");
                 return false;
             }
-            if (i <= 0)
+            if (i == 0)
             {
-                Console.WriteLine("Значение не может быть равно нулю");
+                Console.WriteLine("Число не может быть равно нулю");
                 return false;
             }
             if (i > maxValue || i < minValue)
             {
-                Console.WriteLine("Допустимый диапазон значений от 1 до " + maxValue + ". Введите число.");
+                Console.WriteLine("Допустимый диапазон значений от " + minValue + " до " + maxValue + ". Введите число.");
                 return false;
             }
 
             return true;
         }
-        static void Main(string[] args)
+        static void IBanking()
         {
             decimal amount;
             decimal dailyPercent;
@@ -42,14 +44,14 @@ namespace iBanking
                 Console.WriteLine("Введите ежедневный процент дохода в виде десятичной дроби (1% = 0.01):");
                 input = Console.ReadLine();
             }
-            while (!ValidateInput(input, 100, 0));
-            dailyPercent = decimal.Parse(input.Replace(".",","));
+            while (!ValidateInput(input, 1, 0));
+            dailyPercent = decimal.Parse(input.Replace(".", ","));
             do
             {
                 Console.WriteLine("Введите желаемую сумму накопления в рублях:");
                 input = Console.ReadLine();
             }
-            while (!ValidateInput(input, decimal.MaxValue/2, amount+1));
+            while (!ValidateInput(input, decimal.MaxValue - (2 * amount), amount + 1));
             awaiting = decimal.Parse(input.Replace(".", ","));
 
             int dayX = 0;
@@ -59,6 +61,35 @@ namespace iBanking
                 dayX++;
             }
             Console.WriteLine("Необходимое количество дней для накопления желаемой суммы: " + dayX);
+        }
+
+        static void EvenCalc()
+        {
+            string input;
+            int number;
+            do
+            {
+                Console.WriteLine("Введите положительное натуральное число:");
+                input = Console.ReadLine();
+            }
+            while (!ValidateInput(input, 2000000000, 1) || !int.TryParse(input, out number));
+            int even = 0;
+ 
+            foreach (Char i in number.ToString()) 
+            {
+                if ((((int)i<<6)&64) == 0 ) // эксперимент
+                {
+                    even++;
+                }
+            }
+            Console.WriteLine("В числе " + number + " содержится следующее количество четных цифр: " + even);
+        }
+        static void Main(string[] args)
+        {
+            EvenCalc();
+            IBanking();
+            
+
         }
     }
 }
