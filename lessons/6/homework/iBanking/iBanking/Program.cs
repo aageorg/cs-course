@@ -77,7 +77,7 @@ namespace iBanking
  
             foreach (Char i in number.ToString()) 
             {
-                if ((((int)i<<6)&64) == 0 ) // эксперимент
+                if (((int)i&1) == 0 ) // эксперимент
                 {
                     even++;
                 }
