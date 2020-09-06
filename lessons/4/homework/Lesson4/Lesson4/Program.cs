@@ -27,17 +27,6 @@ namespace Lesson4
             return max;
         }
 
-        static int NumOfContainers()
-        {
-            int total = 0;
-            foreach (int i in Enum.GetValues(typeof(Containers)))
-            {
-                total++;
-            }
-            return total;
-
-        }
-
         static bool ValidateInput(string input)
         {
             if (!decimal.TryParse(input.Replace(".", ","), out decimal i))
