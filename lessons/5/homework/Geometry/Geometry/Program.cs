@@ -4,9 +4,9 @@ using System.Net;
 
 enum Figures
 {
-    круг = 1,
-    треугольник = 2,
-    прямоугольник = 3
+    Circle = 1,
+    Triangle = 2,
+    Rectange = 3
 }
 
 namespace Geometry
@@ -27,7 +27,7 @@ namespace Geometry
         {
             int wrongCount = 0;
             string figure;
-            int figureNum;
+            Figures figureNum;
 
             do
             {
@@ -39,31 +39,35 @@ namespace Geometry
                 figure = Console.ReadLine();
                 wrongCount++;
             }
-            while (!int.TryParse(figure, out figureNum) || !Enum.IsDefined(typeof(Figures), figureNum));
+            while (!Figures.TryParse(figure, out figureNum) || !Enum.IsDefined(typeof(Figures), figureNum));
             double s;
             double p;
+            string outString = "";
             dynamic input;
             switch (figureNum)
             {
-                case 1:
-                    Console.Write("Введите диаметр круга: ");
+                case Figures.Circle:
+                    outString = "круга";
+                    Console.Write("Введите диаметр " + outString + ": ");
                     input = Console.ReadLine();
                     input = DoubleValid(input);
                     s = Math.PI * Math.Pow(input / 2d, 2);
                     p = Math.PI * input;
                     break;
-                case 2:
-                    Console.Write("Введите длину стороны треугольника: ");
+                case Figures.Triangle:
+                    outString = "треугольника";
+                    Console.Write("Введите длину стороны " + outString + ": ");
                     input = Console.ReadLine();
                     input = DoubleValid(input);
                     s = (Math.Pow(input, 2) * Math.Sqrt(3))/4d;
                     p = input * 3;
                     break;
-                case 3:
-                    Console.Write("Введите длину прямоугольника: ");
+                case Figures.Rectange:
+                    outString = "прямоугольника";
+                    Console.Write("Введите длину " + outString + ": ");
                     input = Console.ReadLine();
                     double x = DoubleValid(input);
-                    Console.Write("Введите высоту прямоугольника: ");
+                    Console.Write("Введите высоту " + outString + ": ");
                     input = Console.ReadLine();
                     double y = DoubleValid(input);
                     s = x*y;
@@ -74,8 +78,8 @@ namespace Geometry
                     p = 0;
                     break;
             }
-            Console.WriteLine("\nПлощадь " + (Figures) figureNum + "а: " + (decimal)s);
-            Console.WriteLine("Периметр " + (Figures) figureNum + "а: " + (decimal)p);
+            Console.WriteLine("\nПлощадь " + outString + " " + (decimal)s);
+            Console.WriteLine("Периметр " + outString + " " + (decimal)p);
         }
     }
 }
