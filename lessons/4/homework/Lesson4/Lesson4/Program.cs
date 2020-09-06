@@ -27,6 +27,17 @@ namespace Lesson4
             return max;
         }
 
+        static int NumOfContainers()
+        {
+            int total = 0;
+            foreach (int i in Enum.GetValues(typeof(Containers)))
+            {
+                total++;
+            }
+            return total;
+
+        }
+
         static bool ValidateInput(string input)
         {
             if (!decimal.TryParse(input.Replace(".", ","), out decimal i))
@@ -56,7 +67,33 @@ namespace Lesson4
             search = Math.Ceiling(decimal.Parse(liters.Replace(".",",")));
             Console.WriteLine("You need:");
 
+            //Решение с флагами:
 
+            int[] count = new int[MaxContainer()+1];
+            int visible = 0;
+            for (int i = MaxContainer(); i > 0; i--)
+            {
+                if (Enum.IsDefined(typeof(Containers), i) == true)
+                {
+                    count[i] = (int)search / i;
+                    if (count[i]!=0)
+                    {
+                        visible |= (1 << i);
+                    }
+                    search = (int)search % i;
+                }
+            }
+
+            foreach (int i in Enum.GetValues(typeof(Containers)))
+            {
+                if (((1 << i) & visible) != 0)
+                {
+                    Console.WriteLine(count[i] + " " + (Containers)i + " container(s) (" + i + "L)");
+                }
+            }
+
+
+            /* Короткое решение:
             for (int i = MaxContainer(); i>0; i--)
             {
                 if(Enum.IsDefined(typeof(Containers), i) == true)
@@ -67,6 +104,7 @@ namespace Lesson4
                     i++;
                 }
             }
+            */
         }
     }
 }
