@@ -26,7 +26,8 @@ namespace ConsoleApp1
             array[1] = array[1].ToUpper();
             result1 = string.Join(" ", array);
             Console.WriteLine(result1);
-            result2 = text.Replace("amet", "").TrimEnd();
+            string tmp = text.TrimEnd();
+            result2 = tmp.Substring(0,tmp.LastIndexOf(" "));
             Console.WriteLine(result2);
 
             
