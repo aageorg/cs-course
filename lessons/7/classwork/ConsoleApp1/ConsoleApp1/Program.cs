@@ -26,12 +26,9 @@ namespace ConsoleApp1
             array[1] = array[1].ToUpper();
             result1 = string.Join(" ", array);
             Console.WriteLine(result1);
-            string tmp = text.TrimEnd();
-            result2 = tmp.Substring(0,tmp.LastIndexOf(" "));
+            int end = text.TrimEnd().LastIndexOf(" ");
+            result2 = text.TrimEnd().Substring(0,end);
             Console.WriteLine(result2);
-
-            
-
         }
     }
 }
