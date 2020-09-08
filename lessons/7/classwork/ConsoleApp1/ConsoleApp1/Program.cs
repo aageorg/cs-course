@@ -56,7 +56,7 @@ namespace ConsoleApp1
                 firstSB.Remove(firstSB.Length - 1, 1);
             }
             //removes duplicate whitespaces in a middle:
-            for (int i = firstSB.Length-1; i >0; i--)               
+            for (int i = firstSB.Length; i --> 0; )               
             {                
                 if (Char.IsLetterOrDigit(firstSB[i]) || Char.IsPunctuation(firstSB[i]))
                 { 
@@ -97,7 +97,7 @@ namespace ConsoleApp1
             StringBuilder secondSB = new StringBuilder(text, text.Length*2);
 
             // Removes last word:
-            for (int i = secondSB.Length-1; i >=0; i--)
+            for (int i = secondSB.Length; i --> 0; )
             {
                 if (Char.IsLetterOrDigit(secondSB[i]) || Char.IsPunctuation(secondSB[i]))
                 {
