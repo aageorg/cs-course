@@ -17,13 +17,13 @@ namespace ConsoleApp1
             Console.WriteLine(a + " + " + b + " = " + result1.ToString("N2"));
             Console.WriteLine(String.Format("{0} * {1} = {2:0.##}", a, b, result2));
             Console.WriteLine($"{a} / {b} = {result3:0.##}");
-            */
+            
 
             string result1 = "";
             string result2 = "";
 
             string text = "    lorem    ipsum     dolor   sit     amet    ";
-            /*
+            
             var array = text.Trim().Split(" ", StringSplitOptions.RemoveEmptyEntries);
             array[1] = array[1].ToUpper();
             result1 = string.Join(" ", array);
@@ -32,15 +32,18 @@ namespace ConsoleApp1
             result2 = text.TrimEnd().Substring(0,end);
             Console.WriteLine(result2);
             */
-            StringBuilder firstSB = new StringBuilder(text, text.Length);
-            bool notFirstWhiteSpace = false;
+
+
+
+            string text = "    lorem    ipsum     dolor   sit     amet    ";
 
 
             /******************
              * The first task
              ******************/
 
-
+            StringBuilder firstSB = new StringBuilder(text, text.Length);
+            bool notFirstWhiteSpace = false;
             Console.WriteLine("The first task:");
             // removes start whitespaces:
             while (Char.IsWhiteSpace(firstSB[0]))
