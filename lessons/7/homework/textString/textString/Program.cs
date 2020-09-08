@@ -6,7 +6,7 @@ namespace textString
 {
     class Program
     {
-        static bool isNormalText(string text)
+        static bool IsNormalText(string text)
         {
             if (string.IsNullOrWhiteSpace(text))
             {
@@ -36,7 +36,7 @@ namespace textString
                 input = Console.ReadLine();
                 erCount++;
             }
-            while (!isNormalText(input));
+            while (!IsNormalText(input));
             //Console.WriteLine(input.Length);
             var words = input.Split(" ", StringSplitOptions.RemoveEmptyEntries);
             int countFromA = 0;
