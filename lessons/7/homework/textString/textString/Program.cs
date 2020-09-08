@@ -42,15 +42,16 @@ namespace textString
             int countFromA = 0;
             foreach (string word in words)
             {
-                
                 if (word.StartsWith("а", StringComparison.CurrentCultureIgnoreCase) ||
                     word.StartsWith("a", StringComparison.CurrentCultureIgnoreCase))
                 {
                     countFromA++;
                 }
             }
+
             Console.WriteLine("\nThe first task:");
-            Console.WriteLine($"The string contains {countFromA} word(s) starts form A");
+            Console.WriteLine($"The string contains {countFromA} word(s) starts from A");
+
             Console.WriteLine("\nThe second task:");
             for (int i = input.Length-1; i>=0; i--)
             {
