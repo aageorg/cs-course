@@ -43,36 +43,31 @@ namespace ConsoleApp1
              ******************/
 
             StringBuilder firstSB = new StringBuilder(text, text.Length);
-            bool notFirstWhiteSpace = false;
+            
             Console.WriteLine("The first task:");
+            
             // removes start whitespaces:
             while (Char.IsWhiteSpace(firstSB[0]))
             {
                 firstSB.Remove(0, 1);
             }
+
             // removes end whitespaces:
             while (Char.IsWhiteSpace(firstSB[firstSB.Length - 1]))
             {
                 firstSB.Remove(firstSB.Length - 1, 1);
             }
+
             //removes duplicate whitespaces in a middle:
             for (int i = firstSB.Length; i --> 0; )               
-            {                
-                if (Char.IsLetterOrDigit(firstSB[i]) || Char.IsPunctuation(firstSB[i]))
-                { 
-                    notFirstWhiteSpace = false;
-                    continue;
-                }
-                if (Char.IsWhiteSpace(firstSB[i]) && notFirstWhiteSpace)
+            {       
+                if (Char.IsWhiteSpace(firstSB[i]) && Char.IsWhiteSpace(firstSB[i - 1]))
                 {
-                   firstSB.Remove(i, 1);
-                }
-                else
-                {
-                    notFirstWhiteSpace = true;
+                        firstSB.Remove(i,1);
                 }
             }
-            // Uppercase second word:
+
+            // Uppercase the second word:
             for (int i = 0; i < firstSB.Length; i++)
             {
                 if (Char.IsWhiteSpace(firstSB[i]))
@@ -94,9 +89,9 @@ namespace ConsoleApp1
              *****************/
 
             Console.WriteLine("\nThe second task:");
-            StringBuilder secondSB = new StringBuilder(text, text.Length*2);
+            StringBuilder secondSB = new StringBuilder(text, text.Length);
 
-            // Removes last word:
+            // Removes the last word:
             for (int i = secondSB.Length; i --> 0; )
             {
                 if (Char.IsLetterOrDigit(secondSB[i]) || Char.IsPunctuation(secondSB[i]))
@@ -109,13 +104,13 @@ namespace ConsoleApp1
                     break;
                 }
             }
+
             // removes end whitespaces:
             while (Char.IsWhiteSpace(secondSB[secondSB.Length - 1]))
             {
                 secondSB.Remove(secondSB.Length - 1, 1);
             }
             Console.WriteLine(secondSB.ToString());
-
         }
     }
 }
