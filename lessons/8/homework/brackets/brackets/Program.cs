@@ -25,11 +25,10 @@ namespace Brackets
                 }
                 else
                 {
-                    if (!bracketStack.TryPeek(out char open) || brackets[open] != i)
+                    if (!bracketStack.TryPop(out char open) || brackets[open] != i)
                     {
                         return false;
                     }
-                    bracketStack.Pop();
                 }
             }
             if (bracketStack.Count>0)
