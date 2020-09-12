@@ -8,6 +8,11 @@ namespace Collections
 {
     class Program
     {
+        
+        //*****************
+        // List
+        //*****************
+        
         static void ListSample()
         {
             List<double> numbers = new List<double> { };
@@ -36,6 +41,12 @@ namespace Collections
             double average = sum / (double)numbers.Count;
             Console.WriteLine($"The sum of these numbers is {sum}\nThe average of these numbers is {average}");
         }
+
+        
+        //*****************
+        // Dictionary
+        //*****************
+        
         static void DictionarySample()
         {
             int round;
@@ -81,6 +92,12 @@ namespace Collections
             }
             while (true);
         }
+
+
+        //*****************
+        // Queue
+        //*****************
+
         static void QueueSample()
         {
             Queue<int> nums = new Queue<int>();
@@ -119,6 +136,12 @@ namespace Collections
             }
             while (status == true);
         }
+
+        
+        //*****************
+        // Stack
+        //*****************
+
         static void StackSample()
         {
             string input;
@@ -156,28 +179,11 @@ namespace Collections
         }
         static void Main(string[] args)
         {
-
-            //*****************
-            // List
-            //*****************
-
             ListSample();
-
-            //*****************
-            // Dictionary
-            //*****************
 
             DictionarySample();
 
-            //*****************
-            // Queue
-            //*****************
-
             QueueSample();
-
-            //*****************
-            // Stack
-            //*****************
 
             StackSample();
 
