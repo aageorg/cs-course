@@ -102,7 +102,6 @@ namespace Collections
         {
             Queue<int> nums = new Queue<int>();
             string val;
-            bool status = true;
             int toQueue;
             int n;
 
@@ -118,12 +117,10 @@ namespace Collections
                             n = nums.Dequeue();
                             Console.WriteLine($"Sqtr from {n}: {Math.Sqrt(n)}");
                         }
-                        status = false;
-                        break;
+                        continue;
                     case "exit":
                         Console.WriteLine($"You have {nums.Count} items in queue");
-                        status = false;
-                        break;
+                        continue;
                     default:
                         if (!int.TryParse(val, out toQueue))
                         {
@@ -134,7 +131,7 @@ namespace Collections
                         break;
                 }
             }
-            while (status == true);
+            while (val != "run" && val !="exit");
         }
 
         
@@ -179,13 +176,13 @@ namespace Collections
         }
         static void Main(string[] args)
         {
-            //ListSample();
+            ListSample();
 
             DictionarySample();
 
-           // QueueSample();
+            QueueSample();
 
-           // StackSample();
+            StackSample();
 
         }
     }
