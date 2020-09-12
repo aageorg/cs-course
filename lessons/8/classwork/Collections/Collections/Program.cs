@@ -101,20 +101,18 @@ namespace Collections
         static void QueueSample()
         {
             Queue<int> nums = new Queue<int>();
-            string val;
-            int toQueue;
-            int n;
+            string input;
 
             do
             {
                 Console.WriteLine("Введите целое число:");
-                val = Console.ReadLine();
-                switch (val)
+                input = Console.ReadLine();
+                switch (input)
                 {
                     case "run":
                         while (nums.Count > 0)
                         {
-                            n = nums.Dequeue();
+                            int n = nums.Dequeue();
                             Console.WriteLine($"Sqtr from {n}: {Math.Sqrt(n)}");
                         }
                         continue;
@@ -122,7 +120,7 @@ namespace Collections
                         Console.WriteLine($"You have {nums.Count} items in queue");
                         continue;
                     default:
-                        if (!int.TryParse(val, out toQueue))
+                        if (!int.TryParse(input, out int toQueue))
                         {
                             Console.WriteLine("Введено некорректное значение. Попробуйте снова.");
                             continue;
@@ -131,7 +129,7 @@ namespace Collections
                         break;
                 }
             }
-            while (val != "run" && val !="exit");
+            while (input != "run" && input !="exit");
         }
 
         
