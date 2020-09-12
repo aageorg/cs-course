@@ -55,7 +55,7 @@ namespace textString
             Console.WriteLine("\nThe second task:");
             for (int i = input.Length-1; i>=0; i--)
             {
-                Console.Write(input.Substring(i,1));
+                Console.Write(input[i]);
             }
             Console.WriteLine("\n");
         } 
