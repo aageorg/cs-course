@@ -66,8 +66,8 @@ namespace Collections
 
             do
             {
-                round = new Random().Next(1, countries.Count);
-                int i = 0;
+                round = new Random().Next(1, countries.Count+1);
+                int i = 1;
                 foreach (var (key, value) in countries)
                 {
                     if (i != round)
@@ -179,13 +179,13 @@ namespace Collections
         }
         static void Main(string[] args)
         {
-            ListSample();
+            //ListSample();
 
             DictionarySample();
 
-            QueueSample();
+           // QueueSample();
 
-            StackSample();
+           // StackSample();
 
         }
     }
