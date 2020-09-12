@@ -1,20 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Reflection.Metadata.Ecma335;
 using System.Threading;
 
 namespace Collections
 {
     class Program
     {
-        static void Main(string[] args)
+        static void ListSample()
         {
-
-            //*****************
-            // List
-            //*****************
-
-
             List<double> numbers = new List<double> { };
             Console.WriteLine("Please, enter the double value:");
             string input = Console.ReadLine();
@@ -38,26 +33,23 @@ namespace Collections
             {
                 sum += i;
             }
-            double average = sum / (double) numbers.Count;
+            double average = sum / (double)numbers.Count;
             Console.WriteLine($"The sum of these numbers is {sum}\nThe average of these numbers is {average}");
-
-
-            //*****************
-            // Dictionary
-            //*****************
-
-
+        }
+        static void DictionarySample()
+        {
             int round;
 
-            Dictionary<string, string> countries = new Dictionary<string, string>();
-            countries["Россия"] = "Москва";
-            countries["Франция"] = "Париж";
-            countries["Германия"] = "Берлин";
-            countries["Нидерланды"] = "Амстердам";
-            countries["Япония"] = "Токио";
-            countries["США"] = "Вашингтон";
-            countries["Китай"] = "Пекин";
-
+            Dictionary<string, string> countries = new Dictionary<string, string>
+            {
+                ["Россия"] = "Москва",
+                ["Франция"] = "Париж",
+                ["Германия"] = "Берлин",
+                ["Нидерланды"] = "Амстердам",
+                ["Япония"] = "Токио",
+                ["США"] = "Вашингтон",
+                ["Китай"] = "Пекин",
+            };
             string country = "";
             string capital = "";
 
@@ -88,13 +80,9 @@ namespace Collections
                 }
             }
             while (true);
-
-
-            //*****************
-            // Queue
-            //*****************
-
-
+        }
+        static void QueueSample()
+        {
             Queue<int> nums = new Queue<int>();
             string val;
             bool status = true;
@@ -130,11 +118,68 @@ namespace Collections
                 }
             }
             while (status == true);
+        }
+        static void StackSample()
+        {
+            string input;
+            Stack<int> plates = new Stack<int>();
+            Console.WriteLine("Введите \"wash\", \"dry\" или \"exit\"");
+            do
+            {
+                input = Console.ReadLine();
+                switch (input)
+                {
+                    case "wash":
+                        plates.Push(1);
+                        Console.WriteLine($"В стопке теперь {plates.Count} тарелок");
+                        break;
+                    case "dry":
+                        if (plates.Count > 0)
+                        {
+                            plates.Pop();
+                            Console.WriteLine($"В стопке осталось {plates.Count} тарелок");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Стопка тарелок пуста");
+                        }
+                        break;
+                    case "exit":
+                        continue;
+                    default:
+                        Console.WriteLine("Неверная команда. Введите \"wash\", \"dry\" или \"exit\"");
+                        break;
+                }
+            }
+            while (input != "exit");
+            Console.WriteLine($"Количество тарелок, оставшихся в стопке: {plates.Count}");
+        }
+        static void Main(string[] args)
+        {
 
+            //*****************
+            // List
+            //*****************
+
+            ListSample();
+
+            //*****************
+            // Dictionary
+            //*****************
+
+            DictionarySample();
+
+            //*****************
+            // Queue
+            //*****************
+
+            QueueSample();
 
             //*****************
             // Stack
             //*****************
+
+            StackSample();
 
         }
     }
