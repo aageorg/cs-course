@@ -12,7 +12,7 @@ namespace Incapsulation
             for (int i = 0; i < persons.Length; i++)
             {
                 persons[i] = new Person();
-                do
+                while (true)
                 {
                     try
                     {
@@ -26,14 +26,19 @@ namespace Incapsulation
                     }
                     break;
                 }
-                while (true);
+                
 
-                do
+                while (true)
                 {
                     try
                     {
                         Console.WriteLine($"Enter {persons[i].Name} age:");
-                        persons[i].Age = Console.ReadLine();
+                        if (!int.TryParse(Console.ReadLine(), out int result))
+                        {
+                            Console.WriteLine("Age should be a number");
+                            continue;
+                        }
+                        persons[i].Age = result;
                     }
                     catch (ArgumentException aEx)
                     {
@@ -42,7 +47,6 @@ namespace Incapsulation
                     }
                     break;
                 }
-                while (true);
             }
 
             foreach (Person somebody in persons)
@@ -52,7 +56,6 @@ namespace Incapsulation
 
             Console.WriteLine("\nPress any key to exit");
             Console.ReadKey();
-
         }
     }
 
@@ -65,8 +68,7 @@ namespace Incapsulation
             get => _name;
             set
             {
-                if (string.IsNullOrWhiteSpace(value) 
-                    || string.IsNullOrWhiteSpace(value))
+                if (string.IsNullOrWhiteSpace(value))
                 {
                     throw new ArgumentException("Should be not empty");
                 }
@@ -75,31 +77,27 @@ namespace Incapsulation
         }
         private int _age;
         
-        public string Age
+        public int Age
         {
-            get => _age.ToString();
+            get => _age;
             set
             {
-                if (!int.TryParse(value, out int result))
-                {
-                    throw new ArgumentException("Value should be a number");
-                }
-                if (result < 0)
+                if (value < 0)
                 {
                     throw new ArgumentException("Value should be positive");
                 }
-                _age = result;
+                _age = value;
             }
         }
 
         public string GetPersonInfo(int delta)
         {
-            if ((_age + delta) < 0)
+            if ((Age + delta) < 0)
             {
-                return $"Name {_name}, age in {delta} years: the date before the birth date";
+                return $"Name {Name}, age in {delta} years: the date before the birth date";
             }
 
-            return $"Name {_name}, age in {delta} years: {_age+delta}";
+            return $"Name {Name}, age in {delta} years: {Age+delta}";
         }
         
     }
