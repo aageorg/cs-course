@@ -53,7 +53,7 @@ namespace Alarm
             {
                 Console.WriteLine($"{prop.Name}: {prop.GetValue(this)}");
             }
-            Console.WriteLine("\n");
+            Console.WriteLine("");
         }
         public ReminderItem(string datetime, string message  = "")
         {
