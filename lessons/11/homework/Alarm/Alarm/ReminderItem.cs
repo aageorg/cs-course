@@ -3,11 +3,8 @@ using System.Reflection;
 
 namespace Alarm
 {
-    class ReminderItem
+    public class ReminderItem
     {
-        private DateTimeOffset _alarmDate;
-        private string _alarmMessage;
-
         public TimeSpan TimeToAlarm
         {
             get => AlarmDate - DateTimeOffset.Now;
@@ -16,44 +13,30 @@ namespace Alarm
         {
             get
             {
-                if (TimeToAlarm.Seconds > 0)
-                {
-                    return false;
-                }
-                else
-                {
-                    return true;
-                }
+                return (TimeToAlarm.Seconds < 0);
             }
         }
 
         public DateTimeOffset AlarmDate
         {
-            get => _alarmDate;
-            set
-            {
-                _alarmDate = value;
-            }               
-            
+            get; set;         
         }
 
         public string AlarmMessage
         {
-            get => _alarmMessage;
-            set
-            {
-                _alarmMessage = value;
-            }
+            get; set;
         }
 
 
-        public void WriteProperties()
+        public virtual void WriteProperties()
         {
+            Console.WriteLine("");
+            Console.WriteLine($"Type of the object: {this.GetType()}");
             foreach (PropertyInfo prop in typeof(ReminderItem).GetProperties())
             {
                 Console.WriteLine($"{prop.Name}: {prop.GetValue(this)}");
             }
-            Console.WriteLine("");
+            
         }
         public ReminderItem(string datetime, string message  = "")
         {
