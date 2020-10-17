@@ -6,22 +6,22 @@ namespace LogWriter
     {
         abstract class AbstractLogWriter : ILogWriter
         {
-            private string messageConsrtuctor(string logType, string message) 
+            private string _messageConsrtuctor(string logType, string message) 
             {
-                return $"{DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss+ffff")}    {logType}    {message}";
+                return $"{DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ss+00:00")}\t{logType}\t{message}";
             }
             public abstract void WriteLog(string message);
             public void LogInfo (string message) 
             {
-                WriteLog(messageConsrtuctor("Info", message));
+                WriteLog(_messageConsrtuctor("Info", message));
             }
             public void LogWarning (string message)
             {
-                WriteLog(messageConsrtuctor("Warning", message));
+                WriteLog(_messageConsrtuctor("Warning", message));
             }
             public void LogError(string message)
             {
-                WriteLog(messageConsrtuctor("Error", message));
+                WriteLog(_messageConsrtuctor("Error", message));
             }
         }
     }
