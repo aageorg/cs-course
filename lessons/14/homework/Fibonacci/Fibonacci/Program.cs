@@ -6,7 +6,7 @@ namespace Fibonacci
     {
         static void Main(string[] args)
         {
-            var fnums = new FiboNumbers(47);
+            var fnums = new FiboNumbers(9);
             foreach (int i in fnums)
             {
                 Console.WriteLine(i);
