@@ -13,7 +13,7 @@ namespace LogWriter
 
         static void Main(string[] args)
         {
-
+            /*
             var consoleLogger = new ConsoleLogWriter();
             var fileLogger = new FileLogWriter("C:\\Users\\Nastasia\\Documents\\log.txt");
             consoleLogger.LogInfo("Something for info");
@@ -23,7 +23,15 @@ namespace LogWriter
             multipleLogger.LogInfo("Info message for multipleLogger");
             multipleLogger.LogWarning("Warning message for multipleLogger");
             multipleLogger.LogError("Error message for multipleLogger");
+            */
+            LogWriterFactory.ToConsole.LogInfo("Info Message for console");
+            LogWriterFactory.ToFile.LogWarning("Warning Message for File");
 
+            LogWriterFactory.Both.LogWarning("Some warning message");
+            LogWriterFactory.Both.LogInfo("Some info message");
+            LogWriterFactory.Both.LogError("Some error message");
+
+            
         }
     }
 }
