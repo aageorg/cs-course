@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System.Net.WebSockets;
 
 namespace LogWriter
 {
@@ -23,15 +24,25 @@ namespace LogWriter
             multipleLogger.LogInfo("Info message for multipleLogger");
             multipleLogger.LogWarning("Warning message for multipleLogger");
             multipleLogger.LogError("Error message for multipleLogger");
-            */
-            LogWriterFactory.ToConsole.LogInfo("Info Message for console");
-            LogWriterFactory.ToFile.LogWarning("Warning Message for File");
+*/
 
-            LogWriterFactory.Both.LogWarning("Some warning message");
-            LogWriterFactory.Both.LogInfo("Some info message");
-            LogWriterFactory.Both.LogError("Some error message");
+            var clw = LogWriterFactory.GetLogWriter<ConsoleLogWriter>();
+            var flw = LogWriterFactory.GetLogWriter<FileLogWriter>("C:\\Users\\Nastasia\\Documents\\test.txt");
+            AbstractLogWriter[] logWriters = new AbstractLogWriter[] { (ConsoleLogWriter)clw, (FileLogWriter)flw };
+            var mlw = LogWriterFactory.GetLogWriter<MultipleLogWriter>(logWriters);
 
-            
+            clw.LogError("Error message for console");
+            clw.LogInfo("Info message for console");
+            clw.LogWarning("Warning message for console");
+
+            flw.LogError("Error message for file");
+            flw.LogInfo("Info message for file");
+            flw.LogWarning("Warning message for file");
+
+            mlw.LogError("Error message for file and console");
+            mlw.LogInfo("Info message for file and console");
+            mlw.LogWarning("Warning message for file and console");
+
         }
     }
 }
